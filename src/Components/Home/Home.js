@@ -34,23 +34,23 @@ const HomeComponent = observer((props) => {
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <div className="carousel-inner" style={{ height: "80%" }}>
-              <div className="carousel-item active" style={{ height: "80%" }}>
-                <img src={Images.SlideOne} className="d-block w-100" alt="..." style={{ height: "100%", objectFit: "cover" }} />
+            <div className="carousel-inner" style={{ height: "70vh" }}>
+              <div className="carousel-item active" style={{ height: "70vh" }}>
+                <img src={Images.SlideOne} className="d-block w-100" alt="..." style={{ height: "70vh", objectFit: "cover" }} />
                 <div className="carousel-caption d-none d-md-block">
                   <h5>First slide label</h5>
                   <p>Some representative placeholder content for the first slide.</p>
                 </div>
               </div>
-              <div className="carousel-item" style={{ height: "80%" }}>
-                <img src={Images.SlideTwo} className="d-block w-100" alt="..." style={{ height: "80%", objectFit: "cover" }} />
+              <div className="carousel-item" style={{ height: "70vh" }}>
+                <img src={Images.SlideTwo} className="d-block w-100" alt="..." style={{ height: "70vh", objectFit: "cover" }} />
                 <div className="carousel-caption d-none d-md-block">
                   <h5>Second slide label</h5>
                   <p>Some representative placeholder content for the second slide.</p>
                 </div>
               </div>
-              <div className="carousel-item" style={{ height: "80%" }}>
-                <img src={Images.SlideThree} className="d-block w-100" alt="..." style={{ height: "80%", objectFit: "cover" }} />
+              <div className="carousel-item" style={{ height: "70vh" }}>
+                <img src={Images.SlideThree} className="d-block w-100" alt="..." style={{ height: "70vh", objectFit: "cover" }} />
                 <div className="carousel-caption d-none d-md-block">
                   <h5>Third slide label</h5>
                   <p>Some representative placeholder content for the third slide.</p>

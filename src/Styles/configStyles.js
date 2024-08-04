@@ -1,0 +1,822 @@
+export const homeStyles = (theme) => ({
+  pageContainer: {
+    width: "100%",
+    position: "relative",
+    height: "87%",
+  },
+  pageWrapper: {
+    backgroundColor: theme.palette.white,
+    // boxShadow: '0px 0px 5px rgba(0, 0, 0, 0.2)',
+    margin: "1.2% 1.5vw",
+    height: "94%",
+    borderRadius: "8px",
+  },
+  footer: {
+    height: "13%",
+    backgroundColor: theme.palette.white,
+    display: "flex",
+    justifyContent: "center",
+    flexDirection: "column",
+  },
+  stepper: {
+    padding: "0 !important",
+  },
+  configContainer: {
+    display: "flex",
+    width: "100%",
+    height: "100%",
+  },
+  configCard: {
+    borderRadius: "8px",
+    cursor: "pointer",
+    border: "1px solid #BCC6D6",
+    display: "flex",
+    justifyContent: "center",
+    flexDirection: "column",
+    textAlign: "center",
+    marginRight: "1vw",
+    backgroundColor: theme.palette.white,
+    color: "#00000",
+    width: "18%",
+    padding: "0 2%",
+    fontWeight: "500",
+    height: "40%",
+    "&:nth-child(2)": {
+      "&:hover": {
+        border: `solid 1px ${theme.palette.darkYellow}`,
+        boxShadow:
+          "0px 119px 110px rgba(0, 0, 0, 0.16), 0px 35.875px 33.1618px rgba(0, 0, 0, 0.104254), 0px 14.9006px 13.7737px rgba(0, 0, 0, 0.08), 0px 5.38927px 4.98168px rgba(0, 0, 0, 0.0557458)",
+      },
+    },
+    "&:nth-child(1)": {
+      "&:hover": {
+        border: `1px solid #1676E2`,
+        boxShadow:
+          "0px 119px 110px rgba(0, 0, 0, 0.16), 0px 35.875px 33.1618px rgba(0, 0, 0, 0.104254), 0px 14.9006px 13.7737px rgba(0, 0, 0, 0.08), 0px 5.38927px 4.98168px rgba(0, 0, 0, 0.0557458)",
+      },
+    },
+    "&:nth-child(3)": {
+      "&:hover": {
+        border: `1px solid #9B99EA`,
+        boxShadow:
+          "0px 119px 110px rgba(0, 0, 0, 0.16), 0px 35.875px 33.1618px rgba(0, 0, 0, 0.104254), 0px 14.9006px 13.7737px rgba(0, 0, 0, 0.08), 0px 5.38927px 4.98168px rgba(0, 0, 0, 0.0557458)",
+      },
+    },
+    "&:nth-child(4)": {
+      "&:hover": {
+        border: `1px solid black`,
+        boxShadow:
+          "0px 119px 110px rgba(0, 0, 0, 0.16), 0px 35.875px 33.1618px rgba(0, 0, 0, 0.104254), 0px 14.9006px 13.7737px rgba(0, 0, 0, 0.08), 0px 5.38927px 4.98168px rgba(0, 0, 0, 0.0557458)",
+      },
+    },
+    "&:nth-child(5)": {
+      "&:hover": {
+        border: `1px solid #25AE88`,
+        boxShadow:
+          "0px 119px 110px rgba(0, 0, 0, 0.16), 0px 35.875px 33.1618px rgba(0, 0, 0, 0.104254), 0px 14.9006px 13.7737px rgba(0, 0, 0, 0.08), 0px 5.38927px 4.98168px rgba(0, 0, 0, 0.0557458)",
+      },
+    },
+    "&:nth-child(6)": {
+      "&:hover": {
+        border: `1px solid #07acab`,
+        boxShadow:
+          "0px 119px 110px rgba(0, 0, 0, 0.16), 0px 35.875px 33.1618px rgba(0, 0, 0, 0.104254), 0px 14.9006px 13.7737px rgba(0, 0, 0, 0.08), 0px 5.38927px 4.98168px rgba(0, 0, 0, 0.0557458)",
+      },
+    },
+    "&:nth-child(7)": {
+      "&:hover": {
+        border: `1px solid #6E76E5`,
+        boxShadow:
+          "0px 119px 110px rgba(0, 0, 0, 0.16), 0px 35.875px 33.1618px rgba(0, 0, 0, 0.104254), 0px 14.9006px 13.7737px rgba(0, 0, 0, 0.08), 0px 5.38927px 4.98168px rgba(0, 0, 0, 0.0557458)",
+      },
+    },
+  },
+
+  configHeading: {
+    margin: "1vh 0 0.5vh 0",
+  },
+  configDesc: {
+    color: "black",
+    opacity: "0.7",
+    fontWeight: "400",
+  },
+});
+
+export const dialogStyles = (theme) => ({
+  dialog: {
+    width: "calc(70% - 4vw)",
+    maxWidth: "inherit",
+    borderRadius: "10px",
+    height: "calc(80% - 10vh)",
+    overflowY: "unset",
+    padding: "2vh 2vw 8vh 2vw",
+  },
+  requestCont: {
+    border: "1px solid rgba(0, 0, 0, 0.2)",
+    padding: "0 2vw",
+    // overflow: 'scroll',
+    marginTop: "1vh",
+    position: "relative",
+  },
+  copyButton: {
+    position: "absolute",
+    right: "10px",
+    top: "10px",
+  },
+  mappingRow: {
+    border: "1px solid rgba(0, 0, 0, 0.2)",
+    display: "flex",
+    borderBottom: "none",
+    "&:last-child": {
+      borderBottom: "1px solid rgba(0, 0, 0, 0.2) !important",
+    },
+    "&:first-child": {
+      marginTop: "1vh",
+    },
+  },
+  mappingKey: {
+    width: "50%",
+    borderRight: "1px solid rgba(0, 0, 0, 0.2)",
+    padding: "0.5vh 1vw",
+    fontWeight: "500",
+    backgroundColor: "#dee9ff",
+  },
+  mappingValue: {
+    width: "50%",
+    padding: "0.5vh 1vw",
+  },
+  payLoadDialog: {
+    width: "calc(40% - 4vw)",
+    borderRadius: "10px",
+    maxHeight: "calc(80% - 10vh)",
+    overflowY: "unset",
+    padding: "2vh 2vw 3vh 2vw",
+  },
+  closeButton: {
+    position: "absolute",
+    right: "-4%",
+    top: "-3%",
+    color: theme.palette.white,
+  },
+  backdrop: {
+    position: "absolute",
+  },
+  dialogActions: {
+    display: "flex",
+    justifyContent: "center",
+  },
+  titleRoot: {
+    display: "flex",
+    fontSize: "13px",
+    color: theme.palette.headerGray,
+    paddingLeft: "0px",
+    paddingRight: "0px",
+  },
+  apiTitle: {
+    color: "black",
+    textAlign: "center",
+    fontWeight: "500",
+  },
+  dialogContent: {
+    overflow: "hidden",
+  },
+  ocrDialogContent: {
+    height: "35vh",
+    overflow: "hidden",
+    overflowY: "scroll",
+  },
+  apiDialogContent: {
+    maxHeight: "80%",
+    overflow: "hidden",
+    overflowY: "scroll",
+  },
+});
+
+export const configStyles = (theme) => ({
+  inputSourceCont: {
+    display: "flex",
+    justifyContent: "center",
+    flexDirection: "row",
+    height: "55%",
+    margin: "4vh 0",
+  },
+  disabledAction: {
+    display: "flex",
+    backgroundColor: "lightGray",
+    padding: "0 6px",
+    margin: "0 0 0 6px",
+  },
+  actionItem: {
+    padding: "0 6px",
+    margin: "0 0 0 6px",
+  },
+  tableAction: {
+    height: "30px",
+    padding: "1vh 0 ",
+    backgroundColor: theme.palette.white,
+    cursor: "pointer",
+    // borderRadius: '6px',
+    zIndex: "99",
+    position: "absolute",
+    display: "flex",
+    border: "solid 1px lightGray",
+    justifyContent: "flex-end",
+  },
+  inputSourceContainer: {
+    display: "flex",
+    justifyContent: "center",
+    flexDirection: "column",
+    width: "100%",
+    height: "55%",
+    margin: "4vh 0",
+    alignItems: "center",
+  },
+  addInputValueBtn: {
+    color: theme.palette.blue,
+    textDecoration: "underline",
+  },
+  ipValueContainer: {
+    marginBottom: "1vh",
+    display: "flex",
+    justifyContent: "space-between",
+    position: "relative",
+  },
+  apiForm: {
+    backgroundColor: "#fafafa",
+    padding: "0 2vw 2vh 2vw",
+    borderRadius: "10px",
+    margin: "0 -2vw 2vh -2vw",
+    border: "solid 1px rgba(0, 0, 0, 0.1)",
+    position: "relative",
+  },
+  apiDelButton: {
+    backgroundColor: theme.palette.blue,
+    position: "absolute",
+    borderRadius: "5px",
+    border: "solid 1px rgba(0, 0, 0, 0.1)",
+    top: "50%",
+    right: "-10%",
+    padding: "1%",
+  },
+  ipDelBtn: {
+    position: "absolute",
+    right: "-10%",
+    top: "50%",
+  },
+  ipValueInput: {
+    width: "49%",
+  },
+  inputType: {
+    padding: "1vh 1vw",
+    textAlign: "center",
+    width: "10vw",
+    borderRadius: "10px",
+    margin: "0 1vw",
+    cursor: "pointer",
+    color: theme.palette.headerGray,
+    fontSize: "13px",
+    height: "100%",
+    border: "solid 1px rgba(0, 0, 0, 0.1)",
+    display: "flex",
+    justifyContent: "center",
+    "&:hover": {
+      border: `solid 2px ${theme.palette.darkYellow}`,
+    },
+  },
+  selectedInputsource: {
+    border: `solid 2px ${theme.palette.darkYellow}`,
+  },
+  buttonContainer: {
+    display: "flex",
+    justifyContent: "center",
+    margin: "2vh 0",
+  },
+  ocrForm: {
+    width: "50%",
+  },
+  tableContainer: {
+    overflow: "hidden",
+    flex: "1",
+  },
+  table: {
+    borderRadius: "10px",
+  },
+  apiTableCell: {
+    padding: "0vh !important",
+    fontWeight: "normal !important",
+    fontSize: "12px !important",
+    borderRight: " solid 1px rgba(0, 0, 0, 0.1)",
+  },
+  tableRoot: {
+    //  boxShadow: '0px 1px 4px 0 rgba(92, 101, 132, 0.18)'
+    border: "solid 1px rgba(0, 0, 0, 0.1)",
+    maxHeight: "90%",
+    borderRadius: "10px",
+  },
+  tableHeader: {
+    backgroundColor: "#ebebed",
+    borderRight: " solid 1px rgba(0, 0, 0, 0.1)",
+  },
+  tableCell: {
+    fontWeight: "normal !important",
+    fontSize: "12px !important",
+    borderRight: " solid 1px rgba(0, 0, 0, 0.1)",
+  },
+  tabContainer: {
+    marginBottom: "2vh",
+  },
+  tabRoot: {
+    fontSize: "12px",
+    minWidth: "auto",
+    paddingLeft: "0px",
+    paddingRight: "0px",
+    marginRight: "1vw",
+    marginBottom: "-16px",
+  },
+  ocrAliasTable: {
+    display: "flex",
+    flexDirection: "column",
+    minWidth: "50%",
+    width: "fit-content",
+    borderRadius: "10px",
+    fontSize: "13px",
+    color: theme.palette.headerGray,
+  },
+  ocrApiForm: {
+    display: "flex",
+    flexDirection: "column",
+    minWidth: "50%",
+    width: "fit-content",
+    borderRadius: "10px",
+    fontSize: "12.5px",
+    color: theme.palette.headerGray,
+    fontWeight: "500",
+  },
+  aliasInput: {
+    border: "none",
+    outline: "none",
+    color: theme.palette.headerGray,
+    backgroundColor: "white",
+    "&:hover": {
+      backgroundColor: "white",
+    },
+    "&:focus": {
+      backgroundColor: "white",
+    },
+  },
+  inputTableCell: {
+    fontWeight: "normal !important",
+    fontSize: "12px !important",
+    backgroundColor: "white",
+    "&:hover": {
+      backgroundColor: "white",
+    },
+    "&:focus": {
+      backgroundColor: "white",
+    },
+    borderRight: " solid 2px rgba(0, 0, 0, 0.1)",
+  },
+  checkbox: {
+    borderRight: " solid 1px rgba(0, 0, 0, 0.1)",
+  },
+  selectedMenuItem: {
+    backgroundColor: "#f3f4f8",
+  },
+  radioLabel: {
+    fontSize: "13px",
+    color: theme.palette.headerGray,
+  },
+  addApiButton: {
+    color: theme.palette.blue,
+    fontSize: "12px",
+    textDecoration: "underline",
+    cursor: "pointer",
+  },
+});
+
+export const ruleStyles = (theme) => ({
+  listContainer: {
+    backgroundColor: theme.palette.white,
+    margin: "0 calc(24px + 1vw)",
+    border: "solid 1px rgba(0, 0, 0, 0.05)",
+    boxShadow: "0px 1px 4px 0 rgba(92, 101, 132, 0.18)",
+    borderRadius: "10px",
+    height: "fit-content",
+  },
+  listHeader: {
+    color: theme.palette.headerGray,
+    fontSize: "20px",
+    fontWeight: "300",
+    padding: "2.5vh 2vw",
+    display: "flex",
+    justifyContent: "space-between",
+  },
+  searchContainer: {
+    margin: "0px calc(24px + 1vw) 15px calc(24px + 1vw)",
+    display: "flex",
+    justifyContent: "flex-end",
+    paddingTop: "30px",
+  },
+  ruleContainer: {
+    margin: "30px calc(24px + 1vw) 0 calc(24px + 1vw) ",
+  },
+  addButton: {
+    boxShadow: " 0px 1px 4px 0 rgba(92, 101, 132, 0.18)",
+    borderRadius: "5px",
+    border: "solid 1px rgba(0, 0, 0, 0.1)",
+    display: "flex",
+    color: "#646884",
+    fontWeight: "500",
+    fontSize: "12px",
+    padding: "0 1vw",
+    marginRight: "1vw",
+    cursor: "pointer",
+    flexDirection: "column",
+    justifyContent: "center",
+  },
+  saveRule: {
+    display: "flex",
+    color: theme.palette.white,
+    fontWeight: "500",
+    borderRadius: "5px",
+    boxShadow: " 0px 1px 4px 0 rgba(92, 101, 132, 0.18)",
+    border: "solid 1px rgba(0, 0, 0, 0.1)",
+    backgroundColor: "#157fff",
+    fontSize: "12px",
+    padding: "0 1vw",
+    marginLeft: "1vw",
+    cursor: "pointer",
+    flexDirection: "column",
+    justifyContent: "center",
+  },
+  ruleRow: {
+    display: "flex",
+    marginBottom: "2vh",
+  },
+  rowField: {
+    width: "50%",
+    marginRight: "1vw",
+    display: "flex",
+  },
+  ruleDoc: {
+    width: "100%",
+    display: "flex",
+  },
+  deleteIcon: {
+    color: theme.palette.warmGray,
+    marginRight: "1vw",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+  },
+  disabled: {
+    cursor: "not-allowed",
+    backgroundColor: theme.palette.warmGray,
+  },
+});
+
+export const mappingStyles = (theme) => ({
+  container: {
+    /* backgroundColor: theme.palette.white,
+         margin: '30px calc(24px + 1vw) 0 calc(24px + 1vw)',
+         border: 'solid 1px rgba(0, 0, 0, 0.05)',
+         boxShadow: '0px 1px 4px 0 rgba(92, 101, 132, 0.18)',
+         borderRadius: '10px',
+         height: 'fit-content'*/
+    height: "100%",
+    borderRadius: "10px",
+  },
+  disabledContainer: {
+    pointerEvents: "none",
+    filter: "brightness(0.9)",
+  },
+  helpBtn: {
+    cursor: "pointer",
+    color: "#33343D",
+    fontWeight: "600",
+    backgroundColor: "#FDCC43",
+    padding: "4px 1vw",
+    borderRadius: "16px",
+    width: "fit-content",
+    margin: "0 1vw 0 0",
+    height: "fit-content",
+  },
+  radioCont: {
+    display: "flex",
+    flexDirection: "row !important",
+  },
+  radioRoot: {
+    paddingTop: "0 !important",
+    paddingBottom: "0 !important",
+    paddingLeft: "0 !important",
+    paddingRight: "4px",
+    "&:last-child": {
+      paddingLeft: "1vw  !important",
+    },
+  },
+  smallRadioButton: {
+    "& svg": {
+      width: "0.7em",
+      height: "0.7em",
+    },
+    marginRight: "2vw",
+  },
+  configFooter: {
+    position: "absolute",
+    bottom: "0",
+    boxShadow: "0px -1px 20px rgba(0, 0, 0, 0.07)",
+    padding: "2vh 1vw",
+    background: theme.palette.white,
+    display: "flex",
+    justifyContent: "flex-end",
+    width: "calc(100% - 2vw)",
+  },
+  menuItem: {
+    backgroundColor: theme.palette.white,
+    fontSize: "12px !important",
+    [theme.breakpoints.up("md")]: {
+      fontSize: "12px !important",
+    },
+    [theme.breakpoints.up("lg")]: {
+      fontSize: "14.5px !important",
+    },
+  },
+  mappingHeaders: {
+    padding: "2vh 1vw",
+    // backgroundColor: '#f5f6fc',
+    display: "flex",
+    marginBottom: "1vh",
+  },
+  isTablePresent: {
+    fontSize: "13px",
+    color: theme.palette.headerGray,
+    display: "flex",
+    justifyContent: "center",
+    flexDirection: "column",
+  },
+  listHeader: {
+    color: theme.palette.headerGray,
+    fontSize: "20px",
+    fontWeight: "300",
+    padding: "2.5vh 2vw",
+    display: "flex",
+    justifyContent: "space-between",
+  },
+  mappingContainer: {
+    marginTop: "-6px",
+    padding: "calc(2% + 6px) 2vw ",
+    backgroundColor: "#f8fafc",
+    height: "calc(100% - 48px)",
+    display: "flex",
+    flexDirection: "column",
+  },
+  miniMappingContainer: {
+    padding: "30px 2vw 30px 2vw ",
+    backgroundColor: "#f8fafc",
+    height: "calc(100% - 48px - 110px)",
+    display: "flex",
+    flexDirection: "column",
+  },
+  flexGrow: {
+    display: "flex",
+    flexDirection: "column",
+    flex: "2",
+    height: "78%",
+    overflowY: "scroll",
+  },
+  mappingForm: {
+    // flex: '2',
+    overflowY: "scroll",
+    // height: 'inherit',
+    maxHeight: "85%",
+    padding: "0 1vw",
+  },
+  addButton: {
+    borderRadius: "5px",
+    display: "flex",
+    color: theme.palette.blue,
+    fontWeight: "500",
+    fontSize: "12px",
+    padding: "0 1vw",
+    margin: "2vh 0",
+    cursor: "pointer",
+  },
+  keyTab: {
+    color: "#33343D",
+    fontWeight: "600",
+    backgroundColor: "#FDCC43",
+    padding: "1vh 2vw",
+    borderRadius: "16px",
+    width: "fit-content",
+    margin: "0 1vw 0 0",
+  },
+  tabContainer: {
+    margin: "1vh 0",
+    display: "flex",
+    width: "100%",
+    paddingBottom: "2vh",
+    borderBottom: "solid 1px rgba(223, 227, 232,0.7)",
+    justifyContent: "space-between",
+  },
+  saveRule: {
+    display: "flex",
+    color: theme.palette.white,
+    fontWeight: "500",
+    borderRadius: "5px",
+    boxShadow: " 0px 1px 4px 0 rgba(92, 101, 132, 0.18)",
+    border: "solid 1px rgba(0, 0, 0, 0.1)",
+    backgroundColor: "#157fff",
+    fontSize: "12px",
+    padding: "0 1vw",
+    marginLeft: "1vw",
+    cursor: "pointer",
+    flexDirection: "column",
+    justifyContent: "center",
+  },
+  ruleRow: {
+    display: "flex",
+    marginRight: "1vw",
+    color: theme.palette.headerGray,
+    fontSize: "13px",
+    fontWeight: "500",
+    width: "42%",
+  },
+  rowField: {
+    width: "42%",
+    marginBottom: "1vh",
+    marginRight: "1vw",
+  },
+  formRow: {
+    width: "100%",
+    display: "flex",
+  },
+  deleteIcon: {
+    color: theme.palette.warmGray,
+    marginRight: "1vw",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+  },
+  disabled: {
+    cursor: "not-allowed",
+    backgroundColor: theme.palette.warmGray,
+  },
+});
+
+export const apiStyles = (theme) => ({
+  container: {
+    /* backgroundColor: theme.palette.white,
+         margin: '30px calc(24px + 1vw) 0 calc(24px + 1vw)',
+         border: 'solid 1px rgba(0, 0, 0, 0.05)',
+         boxShadow: '0px 1px 4px 0 rgba(92, 101, 132, 0.18)',
+         borderRadius: '10px',
+         height: 'fit-content'*/
+    height: "calc(100% - 30px)",
+    borderRadius: "10px",
+  },
+  ENABLED: {
+    backgroundColor: theme.palette.green,
+    color: "white",
+    padding: "0 1vw",
+    borderRadius: "0",
+    marginRight: "1.5vw",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    cursor: "pointer",
+  },
+  DISABLED: {
+    backgroundColor: theme.palette.red,
+    color: "white",
+    padding: "0 1vw",
+    borderRadius: "0",
+    marginRight: "1.5vw",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    cursor: "pointer",
+  },
+  disabledMaintenance: {
+    backgroundColor: theme.palette.lightGray,
+    color: "white",
+    padding: "0 1vw",
+    borderRadius: "0",
+    marginRight: "1.5vw",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    cursor: "pointer",
+  },
+  maintenance: {
+    backgroundColor: theme.palette.mustard,
+    color: "black",
+    padding: "0 1vw",
+    borderRadius: "0",
+    marginRight: "1.5vw",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    cursor: "pointer",
+  },
+  statusDetails: {
+    width: "100%",
+    height: "6%",
+    fontWeight: "500",
+  },
+  addButton: {
+    borderRadius: "5px",
+    display: "flex",
+    color: theme.palette.blue,
+    fontWeight: "500",
+    fontSize: "12px",
+    padding: "0 1vw",
+    margin: "2vh 0",
+    cursor: "pointer",
+  },
+  ip: {
+    marginBottom: "1vh",
+    display: "flex",
+    width: "100%",
+  },
+  ipInput: {
+    padding: "1vh 0 !important",
+  },
+  ipList: {
+    flex: "1",
+    width: "50%",
+    marginBottom: "3%",
+    overflowY: "scroll",
+    paddingRight: "1vw",
+  },
+  helpBtn: {
+    cursor: "pointer",
+    color: "#33343D",
+    fontWeight: "600",
+    backgroundColor: "#FDCC43",
+    padding: "4px 1vw",
+    borderRadius: "16px",
+    width: "fit-content",
+    margin: "0 1vw 0 0",
+    height: "fit-content",
+  },
+  radioCont: {
+    display: "flex",
+    flexDirection: "row !important",
+  },
+  radioRoot: {
+    paddingTop: "0 !important",
+    paddingBottom: "0 !important",
+    paddingLeft: "0 !important",
+    paddingRight: "4px",
+    "&:last-child": {
+      paddingLeft: "1vw  !important",
+    },
+  },
+  configFooter: {
+    position: "absolute",
+    bottom: "0",
+    boxShadow: "0px -1px 20px rgba(0, 0, 0, 0.07)",
+    padding: "2vh 1vw",
+    background: theme.palette.white,
+    display: "flex",
+    justifyContent: "flex-end",
+    width: "calc(100% - 2vw)",
+  },
+
+  flexGrow: {
+    display: "flex",
+    flexDirection: "column",
+    flex: "2",
+    height: "78%",
+    overflowY: "scroll",
+  },
+  apiKey: {
+    padding: "1vh 1vw",
+    border: "solid 1px rgba(0, 0, 0, 0.2)",
+    margin: "0 1vw 0 0",
+    display: "flex",
+  },
+  updatedAt: {
+    color: "#666869",
+    marginBottom: "2%",
+    marginTop: "0.5%",
+  },
+  mappingContainer: {
+    marginTop: "-6px",
+    padding: "calc(2% + 6px) 2vw ",
+    backgroundColor: "#f8fafc",
+    height: "calc(100% - 48px)",
+    display: "flex",
+    flexDirection: "column",
+  },
+  whitelistForm: {
+    border: "solid 1px rgba(0, 0, 0, 0.2)",
+    padding: "2vh 1vw",
+    borderRadius: "10px",
+    height: "100%",
+    position: "relative",
+    overflowY: "scroll",
+    display: "flex",
+    flexDirection: "column",
+  },
+});

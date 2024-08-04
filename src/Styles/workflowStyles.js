@@ -1,0 +1,471 @@
+export const workflowStyles = (theme) => ({
+  pageContainer: {
+    width: "100%",
+    position: "relative",
+    height: "87%",
+    margin: "1.2% 1.5vw",
+    height: "94%",
+    backgroundColor: theme.palette.white,
+  },
+  deletableTag: {
+    fontSize: "13px !important",
+    fontWeight: "normal !important",
+    fontWeight: "500",
+    [theme.breakpoints.up("md")]: {
+      fontSize: "13px !important",
+    },
+    [theme.breakpoints.up("lg")]: {
+      fontSize: "16px !important",
+    },
+  },
+  headerCont: {
+    //  boxShadow: '0px 1px 0px rgba(0, 0, 0, 0.25)',
+    padding: "15px 2vw 15px 2vw",
+    display: "flex",
+    //  backgroundColor: '#F7FAFC'
+  },
+  disabledComponentCont: {
+    pointerEvents: "none",
+    backgroundColor: "#dfe1e3",
+  },
+  textFieldRoot: {
+    border: "none",
+    fontSize: "13px !important",
+    fontWeight: "500 !important",
+    padding: "1vh 1vw !important",
+    border: "1px solid #8A8886",
+    color: "#33343D !important",
+  },
+  teamIpRoot: {
+    border: "none",
+    fontSize: "13px !important",
+    fontWeight: "500 !important",
+    padding: "1.5vh 1vw !important",
+    border: "solid 1px rgba(0, 0, 0, 0.1)",
+    color: "#33343D !important",
+  },
+  textFieldRootFocus: {
+    border: "solid 1px green !important",
+    fontSize: "13px !important",
+    padding: "1.5vh 1vw !important",
+  },
+  autoRoot: {
+    width: "100% !important",
+  },
+  autoChip: {
+    height: "auto",
+    backgroundColor: "lightGray",
+    color: "black !important",
+    fontSize: "13px",
+    marginRight: "4px",
+    fontWeight: "400",
+    padding: "0 5px",
+    borderRadius: "4px",
+    "@media (min-width: 1680px)": {
+      fontSize: "13px",
+    },
+    "@media (min-width: 1920px)": {
+      fontSize: "16px",
+    },
+  },
+  textFieldInput: {
+    fontSize: "12px !important",
+    fontWeight: "500 !important",
+  },
+  autoCompleteInput: {
+    padding: "0 !important",
+    color: "#646884",
+    textTransform: "capitalize",
+  },
+  fautoCompleteInput: {
+    padding: "0 !important",
+    color: "#646884",
+    wordBreak: "break-all !important",
+    overflow: "hidden !important",
+    textOverflow: "ellipsis !important",
+    paddingRight: "1vw !important",
+  },
+  autoPopper: {
+    boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.19)",
+  },
+  autoOptions: {
+    minHeight: "fit-content",
+    backgroundColor: "white !important",
+    padding: "1vh 1vw 0 1vw !important",
+    textTransform: "capitalize",
+    borderRadius: "0px",
+    color: "#646884",
+    fontSize: "12px !important",
+    [theme.breakpoints.up("md")]: {
+      fontSize: "12px !important",
+    },
+    [theme.breakpoints.up("lg")]: {
+      fontSize: "14.5px !important",
+    },
+  },
+  autoClear: {
+    display: "none",
+  },
+  selectLabel: {
+    color: "#4F566B",
+    marginBottom: "0.8vh",
+    fontWeight: "500",
+  },
+  autoPaper: {
+    boxShadow: "0px 19px 27px 0 rgba(71, 71, 71, 0.09)",
+    border: "solid 1px rgba(0, 0, 0, 0.1)",
+    borderRadius: "5px",
+  },
+  actionFooter: {
+    position: "absolute",
+    bottom: "0",
+    boxShadow: "0px -1px 20px rgba(0, 0, 0, 0.07)",
+    padding: "3vh 1vw",
+    background: theme.palette.white,
+    display: "flex",
+    justifyContent: "flex-end",
+    width: "calc(100% - 2vw)",
+  },
+  greyHeading: {
+    color: "#6B778C",
+    marginRight: "10px",
+  },
+  numberCircle: {
+    borderRadius: "50%",
+    width: "12px",
+    height: "12px",
+    padding: "4px",
+    backgroundColor: theme.palette.black,
+    color: theme.palette.white,
+    textAlign: "center",
+    fontSize: "10px",
+    fontWeight: "500",
+    display: "flex",
+    justifyContent: "center",
+    flexDirection: "column",
+    textTransform: "capitalize",
+    cursor: "pointer",
+    margin: "0 1vw 0 1vw",
+  },
+  ribbonContent: {
+    position: "absolute",
+    zIndex: "1",
+    width: "500px",
+    left: "0",
+    display: "flex",
+    height: "60px",
+    textAlign: "left",
+  },
+  headerDesc: {
+    opacity: "0.8",
+  },
+  componentCont: {
+    display: "flex",
+    padding: "2vh 2vw",
+    height: "calc(100% - 4vh - 15px - 1vh - 50px - 75px - 6vh)",
+  },
+  ipSourceCont: {
+    width: "29%",
+  },
+  opSource: {
+    display: "flex",
+    color: "rgba(0, 0, 0, 0.8)",
+    marginRight: "1vw",
+    border: "1px solid #8A8886",
+    borderRadius: "2px",
+    padding: "2vh 1vw",
+    width: "24%",
+    height: "fit-content",
+  },
+  checkbox: {
+    marginRight: "4px",
+  },
+});
+
+export const logicStyles = (theme) => ({
+  logicContainer: {
+    height: "100%",
+    width: "100%",
+    position: "relative",
+  },
+  emptyComponent: {
+    width: "13%",
+    alignSelf: "center",
+  },
+  dragText: {
+    color: "rgba(23, 43, 77, 0.7)",
+    fontWeight: "400",
+    marginTop: "-10px",
+    textAlign: "center",
+  },
+  variableDButton: {
+    position: "absolute",
+    verticalAlign: "top",
+    transform: "rotate(270deg)",
+    backgroundColor: theme.palette.black,
+    color: theme.palette.white,
+    cursor: "pointer",
+    transformOrigin: "bottom right",
+    top: "33%",
+    right: "-2vw",
+    borderRadius: "4px",
+    padding: "1vh 1vw",
+  },
+  component: {
+    display: "flex",
+    marginRight: "1vw",
+    border: "1px dashed rgba(0, 0, 0, 0.7)",
+    padding: "6px 8px",
+    borderRadius: "4px",
+    cursor: "grab",
+    "&:hover": {
+      backgroundColor: "#F9EDBF",
+    },
+  },
+  componentDisabled: {
+    cursor: "not-allowed",
+    backgroundColor: "#e8e8e8",
+    "&:hover": {
+      backgroundColor: "#e8e8e8",
+    },
+  },
+  componentContainer: {
+    width: "100%",
+    border: "1px solid #B7B8B9",
+    margin: "1.5vh 0 0 0",
+    height: "calc(100% - 1.5vh)",
+    display: "flex",
+    flexDirection: "column",
+  },
+  innerContainer: {
+    height: "calc(100% - 14px - 20px)",
+    display: "flex",
+  },
+  variableContainer: {
+    width: "39%",
+    margin: "1.5vh 0 0 0",
+    height: "calc(100% - 1.5vh)",
+    border: "1px solid #B7B8B9",
+  },
+  docContainer: {
+    boxShadow: "0px 1px 0px rgba(0, 0, 0, 0.15)",
+    backgroundColor: "#F7FAFC",
+    padding: "8px 8px 0 8px",
+    display: "flex",
+    color: "rgba(0, 0, 0, 0.7)",
+    fontWeight: "500",
+    maxHeight: "20%",
+  },
+  selectedDocs: {
+    display: "flex",
+    flexDirection: "column",
+    minWidth: "fit-content",
+    justifyContent: "center",
+    marginBottom: "8px",
+  },
+  doc: {
+    color: "#42526E",
+    backgroundColor: "rgba(9, 30, 66, 0.08)",
+    padding: "4px 8px",
+    borderRadius: "10px",
+    marginLeft: "1vw",
+    marginBottom: "8px",
+    fontWeight: "normal",
+  },
+  docList: {
+    display: "flex",
+    flexWrap: "wrap",
+    overflowY: "scroll",
+  },
+  componentList: {
+    flex: "1",
+    overflowY: "scroll",
+  },
+  disComponentList: {
+    filter: "blur(1px)",
+    background: "rgba(0,0,0,0.5)",
+    flex: "1",
+    overflowY: "scroll",
+  },
+  unlockCont: {
+    position: "absolute",
+    display: "flex",
+    justifyContent: "center",
+    top: "45%",
+    width: "100%",
+    zIndex: "1",
+  },
+  unlockMsg: {
+    backgroundColor: "rgba(0,0,0,0.7)",
+    color: "white",
+    padding: "2vh 2vw",
+    borderRadius: "20px",
+    display: "flex",
+  },
+});
+
+export const matchStyles = (theme) => ({
+  matchContainer: {
+    border: "1px dashed #A5C9FF",
+    borderRadius: "4px",
+    fontWeight: "500",
+    width: "calc(100% - 2vw)",
+    margin: "1.5vh 1vw",
+    position: "relative",
+  },
+  matchHeader: {
+    display: "flex",
+    justifyContent: "space-between",
+    padding: "1vh 6px 6px 6px",
+    borderBottom: "1px dashed #A5C9FF",
+  },
+  matchNumber: {
+    borderRadius: "50%",
+    width: "10px",
+    height: "10px",
+    padding: "4px",
+    backgroundColor: "rgba(9, 30, 66, 0.08)",
+    color: theme.palette.black,
+    textAlign: "center",
+    fontSize: "9px",
+    fontWeight: "500",
+    display: "flex",
+    justifyContent: "center",
+    flexDirection: "column",
+    textTransform: "capitalize",
+    cursor: "pointer",
+    margin: "0 6px 0 0",
+  },
+  formContainer: {
+    margin: "1vh 1vw",
+  },
+  validationRow: {
+    marginBottom: "1vh",
+    display: "flex",
+  },
+  remove: {
+    marginLeft: "1vw",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "flex-end",
+    marginBottom: "1.5vh",
+  },
+  addValidation: {
+    color: theme.palette.blue,
+    cursor: "pointer",
+    margin: "1vh 1vw",
+    display: "flex",
+  },
+  saveAs: {
+    display: "flex",
+    margin: "0 1vw 2vh 1vw",
+    width: "50%",
+  },
+});
+
+export const variableStyles = (theme) => ({
+  vDrawer: {
+    width: "40%",
+  },
+  mDrawer: {
+    width: "34%",
+    padding: "0 3%",
+  },
+  vTypes: {
+    display: "flex",
+    flexDirection: "row",
+    padding: "1vh 1vw",
+    borderBottom: "1px solid #DDDDDD",
+    width: "100%",
+  },
+  vRadio: {
+    fontWeight: "400",
+  },
+  helpSection: {
+    textAlign: "justify",
+    paddingRight: "1vw",
+    overflowY: "scroll",
+    height: "68%",
+    ["@media (max-height: 650px)"]: {
+      height: "60%",
+    },
+  },
+  batchHelpSection: {
+    overflowY: "scroll",
+    height: "80%",
+    ["@media (max-height: 650px)"]: {
+      height: "73%",
+    },
+    marginBottom: "2%",
+  },
+  step: {
+    color: theme.palette.blue,
+  },
+  closeBtn: {
+    position: "absolute",
+    top: "2%",
+    left: "2%",
+    cursor: "pointer",
+  },
+  hint: {
+    color: theme.palette.blue,
+  },
+  headingContainer: {
+    margin: "5vh 2vw 0vh 2vw",
+    width: "88%",
+    textAlign: "center",
+  },
+  vHeader: {
+    boxShadow: "0px 1px 0px rgba(0, 0, 0, 0.15)",
+    backgroundColor: "#F7FAFC",
+    padding: "2vh 1vw",
+    display: "flex",
+    color: "rgba(0, 0, 0, 0.7)",
+    fontWeight: "500",
+    maxHeight: "20%",
+  },
+  variableAccContainer: {
+    margin: "1.5vh 1vw",
+  },
+  variableAccordion: {
+    border: "1px solid #B7B8B9",
+    marginBottom: "1.5vh",
+    boxShadow: "none !important",
+    borderRadius: "0px !important",
+  },
+  vAccSummary: {
+    color: "#3C4257",
+    "&$content": {
+      margin: "0 !important",
+    },
+  },
+  vAccSummaryRoot: {
+    padding: "0 1vw",
+    borderRadius: "0px !important",
+  },
+  vAccSummaryExpanded: {
+    borderBottom: "1px solid #B7B8B9",
+    color: "#3C4257",
+    padding: "0",
+    margin: "12px 0 !important",
+    borderBottom: "0",
+    minHeight: "0px !important",
+  },
+  vAccIconExpanded: {
+    padding: "0 !important",
+  },
+  variable: {
+    fontWeight: "400",
+    color: "#42526E",
+    backgroundColor: "#ECEDF0",
+    padding: "4px 8px",
+    display: "flex",
+    marginRight: "1vw",
+    marginBottom: "1vh",
+    borderRadius: "10px",
+  },
+  checkbox: {
+    padding: "0 !important",
+    marginRight: "8px",
+  },
+});
